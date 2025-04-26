@@ -56,15 +56,19 @@ const Pokecard = ({pokemon}) => {
         else if(name === "dark"){
             color = "yellow-900"
         }
-        return color;
+        else if(name === "steel"){
+            color = "gray-600"
+        }
+        return color
       }
 
     return (
     <>
-        <div className="flex flex-col min-w-20 min-h-20 sm:min-w-40 sm:min-h-40 
-                        px-2 py-2 mx-2 my-2 rounded-xl bg-gray-400/30 hover:bg-gray-300/50">
+        <div className={`flex flex-col min-w-20 min-h-20 sm:min-w-40 sm:min-h-40 
+                        px-2 py-2 mx-2 my-2 rounded-xl text-white bg-gray-900 shadow-lg shadow-${pokecolor(pokemon.types[0].type.name)} trnsition-all
+                            duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-${pokecolor(pokemon.types[0].type.name)}`}>
             <h2 className="text-xl">{pokemon.name}</h2>
-            <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+            <img src={pokemon.sprites.front_default} alt={pokemon.name} className='h-40 w-40'/>
             <ul className='flex flex-wrap content-center gap-2 justify-center'>
                <li className={`bg-${pokecolor(pokemon.types[0].type.name)} rounded-lg px-1 py-1 text-white font-bold shadow-lg`}>
                     {pokemon.types[0].type.name} 
