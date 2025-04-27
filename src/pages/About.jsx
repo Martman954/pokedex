@@ -28,7 +28,7 @@ const About = () => {
         <li>
           Font used:{" "}
           <Link
-            to="https://tailwindcss.com/docs/guides/vite"
+            to="https://fonts.google.com/specimen/Cal+Sans"
             target="_blank"
             className="font-bold text-2xl"
           >
