@@ -26,6 +26,16 @@ const About = () => {
       </div>
       <ul className="flex flex-col text-center min-w-full ">
         <li>
+          API for Pokémons:{" "}
+          <Link
+            to="https://pokeapi.co/"
+            target="_blank"
+            className="font-bold text-2xl"
+          >
+            Pokédex
+          </Link>
+        </li>
+        <li>
           Font used:{" "}
           <Link
             to="https://fonts.google.com/specimen/Cal+Sans"

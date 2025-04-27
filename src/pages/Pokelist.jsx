@@ -84,7 +84,7 @@ const Pokelist = () => {
   if (isLoading)
     return (
       <div className="text-white text-5xl min-w-screen min-h-screen flex justify-center items-center">
-        Loading Pokemons...
+        Loading Pokémons...
       </div>
     );
   if (error) return <div className="text-white text-5xl min-w-screen min-h-screen flex justify-center items-center">Error occured: {error.message}</div>;
@@ -92,7 +92,7 @@ const Pokelist = () => {
   return (
     <div className="pt-22 flex flex-col justify-center align-center max-w-full">
       <h1 className="text-center text-white text-4xl mt-4 mb-12 justify-center">
-        PokeList
+        PokéList
       </h1>
 
       <form
