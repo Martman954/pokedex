@@ -9,4 +9,4 @@ All of the <b>Pokemons</b> are from <a href="https://pokeapi.co/" target="_blank
 
 
 #### Demo
-![Image](https://github.com/user-attachments/assets/99e4127f-a7fa-4e2f-8392-1eb9dcf214c6)
+![Image](https://github.com/user-attachments/assets/3d71f025-2323-42c0-8d69-1fe94e08b28a)
