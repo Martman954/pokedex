@@ -88,7 +88,7 @@ const Pokemon = () => {
   return (
     <div
       className="flex justify-center my-22 w-full"
-      onClick={handleImageClick}
+      
     >
       <Link
         to={`/?page=${page}`}
@@ -106,6 +106,7 @@ const Pokemon = () => {
           boxShadow: `0 0 10px 2px ${primaryColor}`,
           "--tw-shadow-color": primaryColor,
         }}
+        onClick={handleImageClick}
       >
         <h1 className="text-center text-4xl sm:text-8xl pb-2 flex flex-col items-center pt-6 ">
           {pokemon.name}
